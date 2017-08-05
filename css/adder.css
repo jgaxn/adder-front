@@ -6,3 +6,15 @@ body {
 section {
   padding-top: 70px;
 }
+
+.pricing {
+  font-size: 20px;
+}
+
+.pricing-cross {
+  color: red;
+}
+
+.pricing-check {
+  color: green;
+}
