@@ -1,6 +1,6 @@
 $('body').scrollspy({ target: '#navbar-example' });
 
-$(document).on('click', 'a', function(event){
+$(document).on('click', 'a.scroll-nice', function(event){
     event.preventDefault();
 
     $('html, body').animate({
