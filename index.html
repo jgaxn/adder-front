@@ -1,142 +1,173 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Adder</title>
-    <script src="http://code.jquery.com/jquery-3.2.1.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-    <script src="js/adder.js"></script>
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-    <link href="css/adder.css" rel="stylesheet">
-  </head>
-  <body data-spy="scroll" data-target="#navbar-spy">
-    <nav class="navbar navbar-default navbar-fixed-top">
-      <div class="container-fluid">
-        <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-spy" aria-expanded="false">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="#">Adder</a>
-        </div>
 
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" id="navbar-spy">
-          <ul class="nav navbar-nav navbar-right">
-            <li><a href="#features">Features</a></li>
-            <li><a href="#pricing">Pricing</a></li>
-            <li><a href="#get-started">Get Started</a></li>
-            <li><a href="#about">About</a></li>
+<head>
+  <title>Adder</title>
+  <script src="http://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <script src="js/adder.js"></script>
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <link href="css/adder.css" rel="stylesheet">
+</head>
+
+<body data-spy="scroll" data-target="#navbar-spy">
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-spy" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">Adder</a>
+      </div>
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="navbar-spy">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#pricing">Pricing</a></li>
+          <li><a href="#get-started">Get Started</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="#about">About</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <header>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="jumbotron">
+            <h1>An addition API built for 2017</h1>
+            <p>Sure, you can always roll your own mathematical operations, but wouldn't you rather leave it to the professionals? With our lightning-fast, CPU-optimized algorithms and 99.99% uptime*, our addition API is guaranteed to put your vendor budget to good use.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <section id="pricing">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <h2>Competitive pricing packages to fit any budget</h2>
+          <div class="table-responsive">
+            <table class="table table-bordered table-hover">
+              <thead>
+                <tr>
+                  <th></th>
+                  <th>Free</th>
+                  <th>Basic</th>
+                  <th>Enterprise</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th>requests/month</th>
+                  <td>100</td>
+                  <td>10,000</td>
+                  <td>1,000,000</td>
+                </tr>
+                <tr>
+                  <th>prime numbers</th>
+                  <td><i class="fa fa-times pricing pricing-cross" aria-hidden="true"></i></td>
+                  <td><i class="fa fa-check-circle pricing pricing-check" aria-hidden="true"></i></td>
+                  <td><i class="fa fa-check-circle pricing pricing-check" aria-hidden="true"></i></td>
+                </tr>
+                <tr>
+                  <th>negative numbers</th>
+                  <td><i class="fa fa-times pricing pricing-cross" aria-hidden="true"></i></td>
+                  <td><i class="fa fa-check-circle pricing pricing-check" aria-hidden="true"></i></td>
+                  <td><i class="fa fa-check-circle pricing pricing-check" aria-hidden="true"></i></td>
+                </tr>
+                <tr>
+                  <th>numbers > 1,000</th>
+                  <td><i class="fa fa-times pricing pricing-cross" aria-hidden="true"></i></td>
+                  <td><i class="fa fa-check-circle pricing pricing-check" aria-hidden="true"></i></td>
+                  <td><i class="fa fa-check-circle pricing pricing-check" aria-hidden="true"></i></td>
+                </tr>
+                <tr>
+                  <th>numbers > 1,000,000</th>
+                  <td><i class="fa fa-times pricing pricing-cross" aria-hidden="true"></i></td>
+                  <td><i class="fa fa-times pricing pricing-cross" aria-hidden="true"></i></td>
+                  <td><i class="fa fa-check-circle pricing pricing-check" aria-hidden="true"></i></td>
+                </tr>
+                <tr>
+                  <th>24/7 customer support</th>
+                  <td><i class="fa fa-times pricing pricing-cross" aria-hidden="true"></i></td>
+                  <td><i class="fa fa-times pricing pricing-cross" aria-hidden="true"></i></td>
+                  <td><i class="fa fa-check-circle pricing pricing-check" aria-hidden="true"></i></td>
+                </tr>
+                <tr>
+                  <th>Price (monthly)</th>
+                  <th>$0</th>
+                  <th>$10</th>
+                  <th>$50</th>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <p class="lead">Our "Basic" package fits the needs of 90% of all computations at a very competitive price. Of course, the "Enterprise" package is perfect for the middle manager who wants to catch the attention of the company's higher-ups.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="get-started">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <h2>get started</h2>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="faq">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <h2>FAQ</h2>
+          <ul>
+            <li>
+              <p class="lead">Is this some kind of a joke?</p>
+              <p>In a way, yes. Although we actually <em>did</em> build the API and we actually <em>will</em> charge you for it. So, in another way, no.</p>
+            </li>
           </ul>
         </div>
       </div>
-    </nav>
+    </div>
+  </section>
+  <section id="about">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <h2>About Us</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-6">
+          <h3>Ben Miller</h3>
+        </div>
+        <div class="col-sm-6">
+          <h3>John Atkinson</h3>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <p>* excluding service windows</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-12 text-center">
+          <p>(c) 2017 Adder</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
 
-    <header>
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-sm-12">
-            <p class="lead">Sure, you can always roll your own mathematical operations, but wouldn't you rather leave it to the professionals? With our lightning-fast, CPU-optimized algorithms and 99.99% uptime, our addition API is guaranteed to put your vendor budget to good use.</p>
-          </div>
-        </div>
-      </div>
-    </header>
-    <section id="features">
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-sm-12">
-            <h2>features</h2>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section id="pricing">
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-sm-12">
-            <h2>Competitive pricing packages to fit any budget</h2>
-            <table class="table table-bordered table-hover table-responsive">
-                <thead>
-                    <tr>
-                        <th></th>
-                        <th>Free</th>
-                        <th>Basic</th>
-                        <th>Enterprise</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <th>requests/month</th>
-                        <td>100</td>
-                        <td>10,000</td>
-                        <td>1,000,000</td>
-                    </tr>
-                    <tr>
-                        <th>prime numbers</th>
-                        <td><i class="fa fa-times pricing pricing-cross" aria-hidden="true"></i></td>
-                        <td><i class="fa fa-check-circle pricing pricing-check" aria-hidden="true"></i></td>
-                        <td><i class="fa fa-check-circle pricing pricing-check" aria-hidden="true"></i></td>
-                    </tr>
-                    <tr>
-                        <th>negative numbers</th>
-                        <td><i class="fa fa-times pricing pricing-cross" aria-hidden="true"></i></td>
-                        <td><i class="fa fa-check-circle pricing pricing-check" aria-hidden="true"></i></td>
-                        <td><i class="fa fa-check-circle pricing pricing-check" aria-hidden="true"></i></td>
-                    </tr>
-                    <tr>
-                        <th>numbers > 1,000</th>
-                        <td><i class="fa fa-times pricing pricing-cross" aria-hidden="true"></i></td>
-                        <td><i class="fa fa-check-circle pricing pricing-check" aria-hidden="true"></i></td>
-                        <td><i class="fa fa-check-circle pricing pricing-check" aria-hidden="true"></i></td>
-                    </tr>
-                    <tr>
-                        <th>numbers > 1,000,000</th>
-                        <td><i class="fa fa-times pricing pricing-cross" aria-hidden="true"></i></td>
-                        <td><i class="fa fa-times pricing pricing-cross" aria-hidden="true"></i></td>
-                        <td><i class="fa fa-check-circle pricing pricing-check" aria-hidden="true"></i></td>
-                    </tr>
-                    <tr>
-                        <th>24/7 customer support</th>
-                        <td><i class="fa fa-times pricing pricing-cross" aria-hidden="true"></i></td>
-                        <td><i class="fa fa-times pricing pricing-cross" aria-hidden="true"></i></td>
-                        <td><i class="fa fa-check-circle pricing pricing-check" aria-hidden="true"></i></td>
-                    </tr>
-                    <tr>
-                        <th>Price (monthly)</th>
-                        <th>$0</th>
-                        <th>$10</th>
-                        <th>$50</th>
-                    </tr>
-                </tbody>
-            </table>
-            <p class="lead">Our "Basic" package fits the needs of 90% of all computations at a very competitive price. Of course, the "Enterprise" package is perfect for the middle manager who wants to catch the attention of the company's higher-ups.</p>
-
-          </div>
-        </div>
-      </div>
-    </section>
-    <section id="get-started">
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-sm-12">
-            <h2>get started</h2>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section id="about">
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-sm-12">
-            <h2>about</h2>
-          </div>
-        </div>
-      </div>
-    </section>
-    <footer>
-    </footer>
-  </body>
 </html>
